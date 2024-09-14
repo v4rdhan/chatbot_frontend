@@ -20,7 +20,7 @@ export default function Signup() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8000/api/signup/", {
+    fetch("https://chatbot-e9vv.onrender.com/api/signup/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -17,7 +17,7 @@ export default function Login() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8000/api/login/", {
+    fetch("https://chatbot-e9vv.onrender.com/api/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export default function Login() {
       .then((data) => {
         if (data.message) {
           // Navigate to home/dashboard after login
-          navigate("/chatbot");
+          navigate("/chatbotMin");
         } else if (data.error) {
           setError(data.error);
         }
