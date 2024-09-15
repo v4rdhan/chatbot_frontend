@@ -29,6 +29,16 @@
     display: flex;
     justify-content: end;
 }
+.reciver-message{
+    display: flex;
+    justify-content: start;
+}
 .sender-message p{
     border-radius: 6px 6px 0px 6px;
+}
+.reciver-message p{
+    border-radius: 6px 6px 6px 0px;
+}
+.chatRightCard{
+    height: 90%;
 }
