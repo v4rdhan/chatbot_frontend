@@ -31,7 +31,6 @@ function App() {
               isLogin ? <ChatbotMin /> : <Login handleIsLogin={handleIsLogin} />
             }
           />
-          {console.log(isLogin)}
         </Routes>
       </HashRouter>
     </>
