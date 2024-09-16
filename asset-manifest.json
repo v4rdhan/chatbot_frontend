@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/chatbot_frontend/static/css/main.5bf7fb65.css",
-    "main.js": "/chatbot_frontend/static/js/main.7c271d77.js",
+    "main.css": "/chatbot_frontend/static/css/main.78907ca1.css",
+    "main.js": "/chatbot_frontend/static/js/main.aa40cee8.js",
     "static/js/453.8ab44547.chunk.js": "/chatbot_frontend/static/js/453.8ab44547.chunk.js",
     "index.html": "/chatbot_frontend/index.html",
-    "static/media/material-symbols--send.svg": "/chatbot_frontend/static/media/material-symbols--send.fb1b1ccbabe91146f98b1ca051fc74fd.svg",
-    "main.5bf7fb65.css.map": "/chatbot_frontend/static/css/main.5bf7fb65.css.map",
-    "main.7c271d77.js.map": "/chatbot_frontend/static/js/main.7c271d77.js.map",
+    "main.78907ca1.css.map": "/chatbot_frontend/static/css/main.78907ca1.css.map",
+    "main.aa40cee8.js.map": "/chatbot_frontend/static/js/main.aa40cee8.js.map",
     "453.8ab44547.chunk.js.map": "/chatbot_frontend/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bf7fb65.css",
-    "static/js/main.7c271d77.js"
+    "static/css/main.78907ca1.css",
+    "static/js/main.aa40cee8.js"
   ]
 }
