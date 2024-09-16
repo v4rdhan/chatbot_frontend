@@ -79,6 +79,7 @@ export default function Login() {
             label="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
+          <p className="text-danger">{error}</p>
 
           <Stack
             spacing={2}

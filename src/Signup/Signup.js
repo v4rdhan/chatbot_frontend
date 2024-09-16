@@ -118,6 +118,7 @@ export default function Signup() {
             label="Last Name"
             onChange={(e) => setLastName(e.target.value)}
           />
+          <p className="text-danger">{error}</p>
 
           <Stack
             spacing={2}
