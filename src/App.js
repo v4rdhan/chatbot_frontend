@@ -4,19 +4,33 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import Login from "./login/Login";
 import Signup from "./Signup/Signup";
-import Chatbot from "./chatbot/Chatbot";
+// import Chatbot from "./chatbot/Chatbot";
 import ChatbotMin from "./chatbot/chatbotMin";
+import { useState } from "react";
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+  const handleIsLogin = (e) => {
+    setIsLogin(e);
+  };
+
   return (
     <>
       <HashRouter>
         <Routes>
-          <Route index element={<Login />} />
-          <Route path="/login" element={<Login />} />
+          <Route index element={<Login handleIsLogin={handleIsLogin} />} />
+          <Route
+            path="/login"
+            element={<Login handleIsLogin={handleIsLogin} />}
+          />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          <Route path="/chatbotMin" element={<ChatbotMin />} />
+          {/* <Route path="/chatbot" element={<Chatbot />} /> */}
+          <Route
+            path="/chatbotMin"
+            element={
+              isLogin ? <ChatbotMin /> : <Login handleIsLogin={handleIsLogin} />
+            }
+          />
         </Routes>
       </HashRouter>
     </>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Login.css";
 
-export default function Login() {
+export default function Login({ handleIsLogin }) {
   const navigate = useNavigate();
   const signup = () => {
     navigate("/signup");
@@ -30,6 +30,7 @@ export default function Login() {
       .then((data) => {
         if (data.message) {
           // Navigate to home/dashboard after login
+          handleIsLogin(true);
           navigate("/chatbotMin");
         } else if (data.error) {
           setError(data.error);
@@ -79,6 +80,7 @@ export default function Login() {
             label="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
+          <p className="text-danger">{error}</p>
 
           <Stack
             spacing={2}
